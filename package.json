@@ -1,0 +1,17 @@
+{
+  "name": "defi-money-market",
+  "version": "1.0.0",
+  "description": "DeFi Money Market for CS765 Assignment",
+  "scripts": {
+    "test": "truffle test",
+    "compile": "truffle compile",
+    "migrate": "truffle migrate"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.0",
+    "@truffle/hdwallet-provider": "^2.1.0"
+  },
+  "devDependencies": {
+    "truffle": "^5.6.0"
+  }
+}
