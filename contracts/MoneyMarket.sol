@@ -92,27 +92,6 @@ contract MoneyMarket is Ownable {
         emit Deposited(msg.sender, amount);
     }
 
-    // function withdraw(uint256 amount) external {
-    //     require(amount > 0, "Amount must be greater than 0");
-    //     require(collateralBalances[msg.sender] >= amount, "Insufficient collateral");
-        
-    //     // Calculate health factor after withdrawal
-    //     uint256 newCollateral = collateralBalances[msg.sender].sub(amount);
-    //     uint256 tempCollateral = collateralBalances[msg.sender];
-    //     collateralBalances[msg.sender] = newCollateral;
-        
-    //     uint256 healthFactor = getHealthFactor(msg.sender);
-    //     require(healthFactor >= 1e18, "Health factor would drop below 1");
-        
-    //     // Restore original balance if check passes
-    //     collateralBalances[msg.sender] = tempCollateral;
-        
-    //     // Update balance and transfer
-    //     collateralBalances[msg.sender] = collateralBalances[msg.sender].sub(amount);
-    //     require(IERC20(vlToken).transfer(msg.sender, amount), "Transfer failed");
-        
-    //     emit Withdrawn(msg.sender, amount);
-    // }
 
     function borrow(uint256 amount) external {
         require(amount > 0, "Amount must be greater than 0");
