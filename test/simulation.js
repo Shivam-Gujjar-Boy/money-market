@@ -374,7 +374,7 @@ contract("MoneyMarket Simulation", async (accounts) => {
     `;
 
     // Write HTML file
-    const outputPath = path.join(__dirname, '..', 'simulation_results_1.html');
+    const outputPath = path.join(__dirname, '..', '../money_market_simulations/simulation_results_2.html');
     fs.writeFileSync(outputPath, htmlContent);
     console.log(`\n=== Visualization Generated ===`);
     console.log(`Open this file in your browser: ${outputPath}`);
